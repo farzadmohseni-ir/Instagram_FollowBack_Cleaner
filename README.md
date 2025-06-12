@@ -2,9 +2,15 @@
 A Python-based tool to analyze your Instagram follow data, identify users who don’t follow you back, and batch unfollow them safely.
 
 
-# 📉 Instagram Follow Cleaner
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="100" alt="Instagram Logo">
+</p>
 
-A powerful and simple Python tool to help you identify Instagram users who don't follow you back — and unfollow them safely in controlled batches.
+<h1 align="center">📉 Instagram Follow Cleaner</h1>
+
+<p align="center">
+  <b>A powerful and simple Python tool to help you find and unfollow users who don't follow you back — safely, smartly, and in batches.</b>
+</p>
 
 ---
 
@@ -15,23 +21,27 @@ A powerful and simple Python tool to help you identify Instagram users who don't
 - 🔍 Detect non-followers (users you follow, but who don't follow you back)
 - 📊 Export non-followers to CSV
 - 🔄 Batch unfollow non-followers
-- 💾 Save unfollow progress for later sessions
-- 🛡️ Human-like delays to avoid being flagged by Instagram
-
+- 💾 Resume unfollowing in later sessions
+- 🛡️ Randomized delays to mimic human behavior and reduce risk of detection
 
 ---
 
 ## 📁 How to Get Your Instagram Data (Step-by-Step)
 
-1. Go to [Instagram Data Download Page](https://www.instagram.com/download/request/)
-2. Login to your Instagram account
-3. Select **JSON** format
-4. Enter your email and request the data
-5. You'll receive a ZIP file via email within a few minutes
-6. Unzip the file and locate:
+📦 Instagram allows you to download all of your account data, including your followers and followings. Here’s how:
+
+1. 🔗 Go to the [Instagram Data Download Page](https://www.instagram.com/download/request/)
+2. 🔐 Log in to your account
+3. 🗂️ Select **JSON** format (not HTML!)
+4. 📧 Enter your email and request the data
+5. ⏳ Wait for an email with a link to download your ZIP archive
+6. 🗃️ After extracting the ZIP file, locate the following files:
    - `followers_1.json`
-   - `following.json`
-   (usually found inside `followers_and_following` folder)
+   - `following.json`  
+     *(usually located inside the `followers_and_following/` folder)*
 
-7. Place these two files in the **same folder** as the script.
+7. 📂 Move both files to the **same folder as the Python script** you're running
 
+---
+
+💡 *Note: You must request fresh data from Instagram each time you want updated results.*
